@@ -20,7 +20,9 @@
 				<!-- Header -->
 					<header id="header">
 						<h1>Leaftracker</h1>
-						<p>Ipsum dolor sit amet nullam</p>
+						<p>An image classification model differentiating between toxic
+							and non-toxic plant types.
+						</p>
 					</header>
 
 				<!-- Main -->
@@ -28,45 +30,98 @@
 
 						<!-- Content -->
 							<section id="content" class="main">
-								<span class="image main"><img src="images/pic04.jpg" alt="" /></span>
-								<h2>Magna feugiat lorem</h2>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis fames ac ante ipsum primis in faucibus.</p>
-								<p>Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Consequat leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit enim turpis lorem ipsum dolor sit amet feugiat. Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet est velit quis lorem.</p>
-								<h2>Tempus veroeros</h2>
-								<p>Cep risus aliquam gravida cep ut lacus amet. Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae ante vestibulum ante. Blandit. Ante accumsan nisi eu placerat gravida placerat adipiscing in risus fusce vitae ac mi accumsan nunc in accumsan tempor blandit aliquet aliquet lobortis. Ultricies blandit lobortis praesent turpis. Adipiscing accumsan adipiscing adipiscing ac lacinia cep. Orci blandit a iaculis adipiscing ac. Vivamus ornare laoreet odio vis praesent nunc lorem mi. Erat. Tempus sem faucibus ac id. Vis in blandit. Nascetur ultricies blandit ac. Arcu aliquam. Accumsan mi eget adipiscing nulla. Non vestibulum ac interdum condimentum semper commodo massa arcu.</p>
-							</section>
+								<span class="image main"><img src="images/forest.jpg" alt="" /></span>
+								</p>
+								<h2>Using Neural Networks for Health and Safety</h2>
+								<p>I've been hiking in the hills around San Jose for years, and although it's a fun way to take a break outside of work, I've been
+									warned by friends and family to watch out for mountain lions around the area. I'm pretty sure I don't need an ML model to
+								    identify a mountain lion, but I can't say the same for toxic plants!
+								</p>
+
+								<p>LeafTracker is an image classification model that differentiates between common non-toxic plants and their toxic look-alikes.
+									The sequential model is built using TensorFlow (Keras) that uses data augmentation and dropout techniques to improve accuracy,
+									and the code for the project can be found on my Github page.
+								</p>
+
+								<h2>Plant Types</h2>
+								<p>The following lists document the non-toxic and toxic plants covered in the model's dataset.</p>
+
+								<div class="row">
+									<div class="col-6 col-12-medium">
+										<h3>Non-Toxic Plants</h3>
+										<ul>
+											<li>Bear Oak</li>
+											<li>Boxelder</li>
+											<li>Fragrant Sumac</li>
+											<li>Jack-in-the-pulpit</li>
+											<li>Virginia Creeper</li>
+										</ul>
+									</div>
+									<div class="col-6 col-12-medium">
+										<h3>Toxic Plants</h3>
+										<ul>
+											<li>Eastern Poison Ivy</li>
+											<li>Eastern Poison Oak</li>
+											<li>Poison Sumac</li>
+											<li>Western Poison Ivy</li>
+											<li>Western Poison Oak</li>
+										</ul>
+									</div>
+								</div>
+
+								<h2>Model Demonstration</h2>
+								<p>Coming Soon!</p>
+								
+								<h2>Credits</h2>
+								<ul>
+									<li>The forest photo was taken by <a href="https://unsplash.com/@andrewcoelho?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andrew Coelho</a>
+										on <a href="https://unsplash.com/wallpapers/nature/forest?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.
+									</li>
+									<li>Big thank you to Hans Elliott for publishing the <a href="https://www.kaggle.com/datasets/hanselliott/toxic-plant-classification">Kaggle dataset</a>
+										that made this project possible. More documentation about the dataset can be found on the linked page.
+									</li>
+									<li>TensorFlow's documentation for creating an <a href="https://www.tensorflow.org/tutorials/images/classification">image classification model</a>
+										has greatly helped me learn how to use the library and complete this personal project.
+									</li>
+								</ul>
+
+								</section>
 
 					</div>
 
 				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-							<ul class="actions">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</section>
-						<section>
-							<h2>Etiam feugiat</h2>
-							<dl class="alt">
-								<dt>Address</dt>
-								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
-								<dt>Phone</dt>
-								<dd>(000) 000-0000 x 0000</dd>
-								<dt>Email</dt>
-								<dd><a href="#">information@untitled.tld</a></dd>
-							</dl>
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
-							</ul>
-						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+				<footer id="footer">
+					<section>
+						<h2>Luke Nam</h2>
+						<p>Undergraduate Junior at Duke University. Majoring in Computer Science (BS).
+						Main interests are artificial intelligence and cybersecurity.
+						</p>
+						<ul class="actions">
+							<li><a href="https://lukelike1001.github.io/" class="button">Homepage</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Contact Me</h2>
+						<dl class="alt">
+							<dt>Address</dt>
+							<dd>420 Chapel Drive &bull; Durham, NC 27708 &bull; USA</dd>
+							<dt>Phone</dt>
+							<dd>(408) 442-0384</dd>
+							<dt>Email</dt>
+							<dd><a href="#">luke.nam@duke.edu</a></dd>
+						</dl>
+						<ul class="icons">
+							<!-- <li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li> -->
+							<!-- <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li> -->
+							<!-- <li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li> -->
+							<li><a href="https://github.com/lukelike1001" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/luke-nam-201a25219/" class="icon brands fa-brands fa-linkedin-in alt"><span class="label">LinkedIn</span></a></li>
+							<!-- <li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li> -->
+						</ul>
+					</section>
+					<p class="copyright">&copy;lukelike1001. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+				</footer>
+				
 
 			</div>
 
