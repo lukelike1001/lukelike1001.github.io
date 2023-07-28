@@ -67,61 +67,55 @@
 									<h2>SmartQuake</h2>
 									<p>A machine-learning model for long-term earthquake prediction</p>
 								</header>
+
+								<p align="center">
+									<iframe src="https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/5gjrrssl72m5vfe/Canada%20Earthquake%20Database.json"
+										title="Significant North American Earthquakes (1985-2023)" height="500" width="900" allowfullscreen="true">
+									</iframe>
+								</p>
+								
 								<ul class="statistics">
-									<li class="style1">
+									<!-- <li class="style1">
 										<span class="icon solid fa-code-branch"></span>
-										<strong>4000</strong> Years
-									</li>
-									<li class="style2">
+										<strong>123</strong> Mb
+									</li> -->
+									<li class="style1">
 										<span class="icon fa-folder-open"></span>
-										<strong>123</strong> MB
+										<strong>4000</strong> Years
 									</li>
 									<li class="style3">
 										<span class="icon solid fa-signal"></span>
-										<strong>5147</strong> Events
-									</li>
-									<li class="style4">
-										<span class="icon solid fa-laptop"></span>
-										<strong>4</strong> Layers
+										<strong>>200k</strong> Events
 									</li>
 									<li class="style5">
-										<span class="icon fa-gem"></span>
-										<strong>15</strong> Observatories
+										<span class="icon solid fa-laptop"></span>
+										<strong>25</strong> Observatories
 									</li>
+									<!-- <li class="style5">
+										<span class="icon fa-gem"></span>
+										<strong>4</strong> Layers
+									</li> -->
 								</ul>
+
 								<p class="content">
 									Strong earthquakes are infrequent yet destructive events, mainly due to
 									their unpredictability. Earthquake warning systems can only reactively send
 									an alarm upon detection of an earthquake, which leaves only a small time frame
 									for people to head to safety.<br> Led by Enmao Diao, The SmartQuake Project
 									plans to utilize graph neural networks (GNNs) to predict both the location
-									and time of an earthquake days in advance. More information can be found in
-								    the links below.
+									and time of an earthquake days in advance.
 								</p>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="https://diaoenmao.com/" class="button">Enmao Diao</a></li>
-									</ul>
-								</footer>
-								<!-- <script src="https://gist.github.com/lukelike1001/ff15dea35f399fee17f013ab388132de.js"></script> -->
+
+								<p>The kepler.gl map plots significant earthquakes recorded by the
+									<a href="https://earthquakescanada.nrcan.gc.ca/stndon/NEDB-BNDS/bulletin-en.php">
+									Canadian National Earthquake Database</a>, where magnitudes are >= 4.0. Many databases
+									have been scraped and compiled to construct the neural network model.
+								</p>
+
+								<ul class="actions special">
+									<li><a href="https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/5gjrrssl72m5vfe/Canada%20Earthquake%20Database.json" class="button">kepler.gl Map</a></li>
+								</ul>
 								
-								<header class="major">
-									<h2>kepler.gl Earthquake Map</h2>
-									<p>The following kepler.gl map plots significant earthquakes recorded by the
-										<a href="https://earthquakescanada.nrcan.gc.ca/stndon/NEDB-BNDS/bulletin-en.php">
-										Canadian National Earthquake Database</a>, where magnitudes are >= 4.0. Many databases
-										have been scraped and compiled to construct the neural network model.
-									</p>
-								</header>
-								
-								<iframe src="https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/5gjrrssl72m5vfe/Canada%20Earthquake%20Database.json"
-									title="Significant North American Earthquakes (1985-2023)" height="500" width="900"></iframe>
-								<footer class="major">
-									<p> To further experiment with the visualization, you can visit the link below!</p>
-									<ul class="actions special">
-										<li><a href="https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/5gjrrssl72m5vfe/Canada%20Earthquake%20Database.json" class="button">kepler.gl Map</a></li>
-									</ul>
-								</footer>
 							</section>
 						
 						<!-- Second Section -->
@@ -179,7 +173,8 @@
 										on this website. Their repositories can be found on my Github page!
 										</p>
 										<ul class="actions">
-											<li><a href="model.html" class="button">Leaftracker</a></li>
+											<li><a href="leaf.html" class="button">Leaftracker</a></li>
+											<li><a href="place.html" class="button primary">r/place Analysis</a></li>
 										</ul>
 									</div>
 									<span class="image"><img src="images/linearity.png" alt="" /></span>
