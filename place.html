@@ -32,6 +32,7 @@
 						<li><a href="#intro" class="active">Intro</a></li>
 						<li><a href="#api">API</a></li>
 						<li><a href="#data">Data Collection</a></li>
+						<li><a href="#analysis">Analysis</a></li>
 					</ul>
 				</nav>
 
@@ -111,11 +112,25 @@
 											<h2>Collecting Data</h2>
 										</header>
 										<p>
-											Rate requests. Html files. u/reddit_irl.
+											On official posts made by the Reddit admin u/reddit_irl during r/place 2023, I used a
+											web scraper to collect 8573 comments. However, since Reddit uses rate limiting to
+											discourage web scraping, there were some modifications made to collect these comments.
+										</p>
+										<p>
+											Instead of using requests and BeautifulSoup to scrape comments from a URL, I
+											pre-downloaded .html files of the posts, and extracted the comments from these
+											files. However, the caveat to this approach is that .html file downloads from
+											Reddit pages can only save up to 500 comments, which was a concern as many
+											threads had thousands of comments.
+										<p>
+											As a compromise, the .html files store the "Top" 500 comments, which sorts
+											comments based on how much they were upvote count, which is the Reddit
+											equivalent of the like count. The CSV file containing all comments can be
+											found on my Github page.
 										</p>
 										<ul class="actions">
 											<li><a href="https://www.reddit.com/user/reddit_irl/submitted/" class="button">
-												reddit_irl
+												reddit_irl Profile
 											</a></li>
 										</ul>
 									</div>
@@ -124,6 +139,27 @@
 								
 
 							</section>
+
+						<!-- Analysis -->
+						<section id="analysis" class="main">
+							<span class="image main">
+								<img src="images/common_comments.png"
+								alt="Top 10 Frequent Comments on r/place 2023 Official Discussion Posts."/>
+							</span>
+
+							<h2>Analyzing Data</h2>
+							<p>
+								Bertweet-sentiment-analysis
+							</p>
+
+							<ul class="actions special">
+								<li><a href="https://www.reddit.com/r/reddit/comments/145bram/addressing_the_community_about_changes_to_our_api/"
+									class="button primary">API Announcement</a></li>
+								<li><a href="https://huggingface.co/finiteautomata/bertweet-base-sentiment-analysis"
+									class="button">bertweet-base-sentiment-analysis</a></li>
+							</ul>
+
+						</section>
 
 					</div>
 
