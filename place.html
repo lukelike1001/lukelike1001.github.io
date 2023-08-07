@@ -33,6 +33,7 @@
 						<li><a href="#api">API</a></li>
 						<li><a href="#data">Data Collection</a></li>
 						<li><a href="#analysis">Analysis</a></li>
+						<li><a href="#code">Source Code</a></li>
 					</ul>
 				</nav>
 
@@ -147,9 +148,29 @@
 								alt="Top 10 Frequent Comments on r/place 2023 Official Discussion Posts."/>
 							</span>
 
-							<h2>Analyzing Data</h2>
+							<h2>Analyzing the Comments</h2>
 							<p>
-								Bertweet-sentiment-analysis
+								Prior to loading the sentiment analysis model, I extracted the ten most popular comments
+								from the official r/place 2023 discussion boards. From the bar chart, we can determine
+								that many users dislike Steve Huffman -- better known as his username u/spez on Reddit -- 
+								with the numerous "F*** u/spez" and "F*** spez" comments. Also, since half of the ten
+								most popular comments are in German, we can find that r/place has a massive
+								German userbase.
+							</p>
+
+							<p>
+								For this project, I used the bertweet-base-sentiment-analysis model to classify comments
+								as positive, neutral, or negative. The model reported that an astounding 47.4% of the
+								comments are neutral, while 40.5% of the comments are negative! In contrast, only
+								12.1% of the comments are positive. This suggests that the general sentiment of the
+								r/place 2023 was generally negative!
+							</p>
+
+							<p>
+								To better gauge sentiment on r/place 2023, I plan on separating English and German comments,
+								and letting a German-based NLP model evaluate the German comments. The sentiment analysis
+								model generally labeled German comments as neutral, and utilizing this approach can
+								lead to more accuract results.
 							</p>
 
 							<ul class="actions special">
@@ -159,6 +180,13 @@
 									class="button">bertweet-base-sentiment-analysis</a></li>
 							</ul>
 
+						</section>
+
+					<!-- Code -->
+						<section id="code" class="main">
+							<h2>Source Code</h2>
+							<p>All the code used for this project can be found on my Github page!</p>
+							<script src="https://gist.github.com/lukelike1001/31b5a55cb63e5fbe25eaaa0a7187810d.js"></script>
 						</section>
 
 					</div>
