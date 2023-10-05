@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Climate Op-Ed</title>
+		<link rel="icon" type="image/x-icon" href="images/leek.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Op-ed: Liberals HATE America.<br>We NEED to BURN More FOSSIL FUELS.</h1>
+						<p>
+                            Written by Luke Nam
+						</p>
+					</header>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="#intro" class="active">Intro</a></li>
+						<li><a href="#api">API</a></li>
+						<li><a href="#data">Data Collection</a></li>
+						<li><a href="#analysis">Analysis</a></li>
+						<li><a href="#code">Source Code</a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="intro" class="main">
+								<span class="image main">
+									<img src="images/rally.jpg" alt="MAGA 2024"/>
+								</span>
+								</p>
+
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>A DAY THAT WILL LIVE IN INFAMY</h2>
+										</header>
+										<p> On August 7, 2022 -- a day that will live in infamy -- Deep State Majority Leader Chuck Schumer (D-emon)
+                                            and Traitor Joe Manchin (D-Worst Virginia) backstabbed our nation by passing the Inflation Reduction Act
+                                            through the United States Senate. With this pivotal moment, JOE BIDEN was allowed free reign to destroy
+                                            our economy, and the cheers of WOKE CLIMATE HIPPIES accompanied him as inflation continued wreaking havoc
+                                            on our lives.
+										</p>
+										<ul class="actions">
+											<li><a href="https://www.democrats.senate.gov/" class="button primary">SENATE DEMOCRAT MAFIA LIST</a></li>
+										</ul>
+									</div>
+									<span class="image">
+										<img src="images/senate_democrats.jpg" alt="Senate Democrats" />
+									</span>
+								</div>
+							</section>
+						
+						<!-- API Controversy -->
+							<section id="api" class="main">
+								<span class="image main">
+									<img src="images/place_announcement.png"
+									alt="The Reddit moderation team acknowledges that r/place is taking place on the backdrop
+									of the controversial API pricing change."/>
+								</span>
+
+								<h2>2023 Reddit API Controversy</h2>
+								<p>On July 1, 2023, Reddit changed its API pricing from $0 per 1000 API calls to $0.24
+									per 1000 API calls. The Reddit community's response was very negative, as the resulting
+									high operation costs forced popular third-party apps to shut down (e.g., Apollo App).
+
+									Therefore, when r/place returned on July 20, 2023, many users were still angry
+									at Steve Huffman, the CEO of Reddit. On the r/place canvas, numerous people
+									wrote "F*** u/spez", a reference to the CEO's Reddit username.
+
+									For more information, the Reddit announcement about the API price increase and the
+									Wikipedia article on the subject have been listed below.
+								</p>
+
+								<ul class="actions special">
+									<li><a href="https://www.reddit.com/r/reddit/comments/145bram/addressing_the_community_about_changes_to_our_api/"
+										class="button primary">API Announcement</a></li>
+									<li><a href="https://en.wikipedia.org/wiki/2023_Reddit_API_controversy"
+										class="button">Wikipedia Page</a></li>
+								</ul>
+							</section>
+						
+						<!-- Data Collection -->
+							<section id="data" class="main">
+								<h2>Tracking Public Opinion on r/place 2023</h2>
+								<p>The purpose of this project is to determine whether the Reddit community viewed r/place 2023
+									as generally positive, mixed, or generally negative. Was the critical backlash from a vocal
+									minority or did this sentiment reflect the greater community?
+								</p>
+
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>Collecting Data</h2>
+										</header>
+										<p>
+											On official posts made by the Reddit admin u/reddit_irl during r/place 2023, I used a
+											web scraper to collect 8573 comments. However, since Reddit uses rate limiting to
+											discourage web scraping, there were some modifications made to collect these comments.
+										</p>
+										<p>
+											Instead of using requests and BeautifulSoup to scrape comments from a URL, I
+											pre-downloaded .html files of the posts, and extracted the comments from these
+											files. However, the caveat to this approach is that .html file downloads from
+											Reddit pages can only save up to 500 comments, which was a concern as many
+											threads had thousands of comments.
+										<p>
+											As a compromise, the .html files store the "Top" 500 comments, which sorts
+											comments based on how much they were upvote count, which is the Reddit
+											equivalent of the like count. The CSV file containing all comments can be
+											found on my Github page.
+										</p>
+										<ul class="actions">
+											<li><a href="https://www.reddit.com/user/reddit_irl/submitted/" class="button">
+												reddit_irl Profile
+											</a></li>
+										</ul>
+									</div>
+									<span class="image"> <img src="images/filter.png" alt="Rate Requests"/></span>
+								</div>
+								
+
+							</section>
+
+						<!-- Analysis -->
+						<section id="analysis" class="main">
+							<span class="image main">
+								<img src="images/common_comments.png"
+								alt="Top 10 Frequent Comments on r/place 2023 Official Discussion Posts."/>
+							</span>
+
+							<h2>Analyzing the Comments</h2>
+							<p>
+								Prior to loading the sentiment analysis model, I extracted the ten most popular comments
+								from the official r/place 2023 discussion boards. From the bar chart, we can determine
+								that many users dislike Steve Huffman -- better known as his username u/spez on Reddit -- 
+								with the numerous "F*** u/spez" and "F*** spez" comments. Also, since half of the ten
+								most popular comments are in German, we can find that r/place has a massive
+								German userbase.
+							</p>
+
+							<p>
+								For this project, I used the bertweet-base-sentiment-analysis model to classify comments
+								as positive, neutral, or negative. The model reported that an astounding 47.4% of the
+								comments are neutral, while 40.5% of the comments are negative! In contrast, only
+								12.1% of the comments are positive. This suggests that the general sentiment of the
+								r/place 2023 was generally negative!
+							</p>
+
+							<p>
+								To better gauge sentiment on r/place 2023, I plan on separating English and German comments,
+								and letting a German-based NLP model evaluate the German comments. The sentiment analysis
+								model generally labeled German comments as neutral, and utilizing this approach can
+								lead to more accuract results.
+							</p>
+
+							<ul class="actions special">
+								<li><a href="https://www.reddit.com/r/reddit/comments/145bram/addressing_the_community_about_changes_to_our_api/"
+									class="button primary">API Announcement</a></li>
+								<li><a href="https://huggingface.co/finiteautomata/bertweet-base-sentiment-analysis"
+									class="button">bertweet-base-sentiment-analysis</a></li>
+							</ul>
+
+						</section>
+
+					<!-- Code -->
+						<section id="code" class="main">
+							<h2>Source Code</h2>
+							<p>All the code used for this project can be found on my Github page!</p>
+							<script src="https://gist.github.com/lukelike1001/31b5a55cb63e5fbe25eaaa0a7187810d.js"></script>
+
+							<ul class="actions special">
+								<li><a href="https://github.com/lukelike1001/PlaceAnalysis"
+									class="button primary">PlaceAnalysis Github</a></li>
+								<li><a href="https://github.com/lukelike1001"
+									class="button">@lukelike1001</a></li>
+							</ul>
+
+						</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section>
+						<h2>Luke Nam</h2>
+							<p>Undergraduate Junior at Duke University. Graduating in Spring 2025.
+								Majoring in Computer Science (BS). Main interests are
+								artificial intelligence, cybersecurity, and puppies.
+							</p>
+						<ul class="actions">
+							<li><a href="https://lukelike1001.github.io/" class="button">Homepage</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Contact Me</h2>
+						<dl class="alt">
+							<!-- <dt>Address</dt> -->
+							<!-- <dd>420 Chapel Drive &bull; Durham, NC 27708 &bull; USA</dd> -->
+							<!-- <dt>Phone</dt> -->
+							<!-- <dd>(408) 442-0384</dd> -->
+							<dt>Email</dt>
+							<dd><a href="mailto: luke.nam@duke.edu">luke.nam@duke.edu</a></dd>
+						</dl>
+						<ul class="icons">
+							<!-- <li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li> -->
+							<!-- <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li> -->
+							<!-- <li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li> -->
+							<li><a href="https://github.com/lukelike1001" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/lsn12/" class="icon brands fa-brands fa-linkedin-in alt"><span class="label">LinkedIn</span></a></li>
+							<!-- <li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li> -->
+						</ul>
+					</section>
+					<p class="copyright">&copy;lukelike1001. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+				</footer>
+				
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
