@@ -3792,3 +3792,10 @@ input, select, textarea {
 		align-items: center; /* Center content vertically within .content */
 		justify-content: center;
 	}
+
+	.vertical-container {
+		display: flex; /* Use flexbox for better control */
+		flex-direction: column;
+		align-items: center; /* Center content vertically within .content */
+		justify-content: center;
+	}
