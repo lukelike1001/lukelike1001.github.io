@@ -3783,3 +3783,12 @@ input, select, textarea {
 			}
 
 		}
+
+
+/* Centering the Logo (personally added) */
+
+	.container {
+		display: flex; /* Use flexbox for better control */
+		align-items: center; /* Center content vertically within .content */
+		justify-content: center;
+	}
