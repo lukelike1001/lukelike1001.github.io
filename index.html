@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>luke@duke</title>
+		<title>Luke Nam</title>
 		<link rel="icon" type="image/x-icon" href="images/leek.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -31,8 +31,8 @@
 							<div style="text-align:left;">
 								<h1>Luke Nam</h1>
 								<p>
-									[cs]@duke | Class of 2025<br>
-									email: <a href="mailto: luke.nam@duke.edu">luke.nam@duke.edu</a>
+									[cs]@vanderbilt ph.d. <br>
+									email: <a href="mailto: luke.nam@vanderbilt.edu">luke.nam@vanderbilt.edu</a>
 								</p>
 							</div>
 						</div>
@@ -43,12 +43,10 @@
 					<nav id="nav">
 						<ul>
 							<li><a href="#new" class="active">What's New?</a></li>
+							<li><a href="#pid">PID</a></li>
 							<li><a href="#smartquake">SmartQuake</a></li>
-							<!-- <li><a href="#privacy">Privacy</a></li> -->
 							<li><a href="#projects">Projects</a></li>
-							<li><a href="#classwork">Classwork</a></li>
 							<li><a href="#about">About Me</a></li>
-							<li><a href="#extras">Extras</a></li>
 						</ul>
 					</nav>
 
@@ -75,17 +73,27 @@
 									<li><a href="https://lukelike1001.github.io/leaf.html" class="button primary">Info Page</a></li>
 								</ul>
 
-								<!-- <p>
-									bert-reddit is a sentiment analysis model created by fine-tuning the distilBERT-base-uncased model with Reddit comments. I used the model to track public sentiment on Reddit following the API pricing controversy of July 2023, when the price was increased from $0 to $0.24 per 1000 API calls. Info pages are linked below!
+							</section>
+
+							
+							<!-- Formal Verification of PID Controller -->
+							<section id="pid" class="main special">
+								<header class="major">
+									<h2>Formally Verified PID Controller</h2>
+									<p>Applying CBMC to perform bounds checking for a simulated PID controller in C</p>
+								</header>
+
+								<!-- Show a png file of the kepler.gl in the meantime -->
+								<img src="images/PID_controller.png" width="100%" alt="" />
+								
+								<p class="content">
+									I'm currently building a modular PID control loop in C and formally verifying key safety properties using CBMC, such as proving bounded outputs, robustness to variable sensor inputs, and stability across time. I've been automating SAT-based verification checks using GitHub Actions and plan to continue the project by supporting future STM32H753 integration, such as verifying certain pin bounds checking.
 								</p>
 
 								<ul class="actions special">
-									<li><a href="https://huggingface.co/spaces/lukelike1001/PlaceAnalysis" class="button primary">huggingface.co Space</a></li>
-									<li><a href="https://github.com/lukelike1001/PlaceAnalysis" class="button">Github Repo</a></li>
-									<li><a href="https://lukelike1001.github.io/place.html" class="button primary">Info Page</a></li>
-								</ul> -->
-
-
+									<li><a href="https://github.com/lukelike1001/verified-embedded-control-loop" class="button">Github</a></li>
+								</ul>
+								
 							</section>
 
 						<!-- SmartQuake -->
@@ -159,52 +167,6 @@
 								</div>
 							</section>
 						
-						<!-- Classwork -->
-							<section id="classwork" class="main special">
-								<header class="major">
-									<h2>Classwork</h2>
-									<p>I plan to graduate Duke University in Spring 2025 with a BS in Computer Science.<br>
-									Here, you can find the courses I have taken so far:</p>
-								</header>
-								<div class="row">
-									<div class="col-6 col-12-medium" align="left">
-										<h3>Computer Science</h3>
-										<ul>
-											<li>CS308: Advanced Software Design and Implementation</li>
-											<li>CS371: Elements of Machine Learning</li>
-											<li>CS351: Intro to Computer Security</li>
-											<li>CS350: Digital Systems</li>
-											<li>CS562: Cryo-EM Image Analysis</li>
-											<li>CS345: Graphics Software Architecture</li>
-											<li>CS316: Intro to Database Systems</li>
-											<li>CS333: Algorithms in the Real World</li>
-											<li>CS330: Design/Analysis of Algorithms</li>
-											<li>CS370: Intro to Artificial Intelligence</li>
-											<li>CS230: Discrete Math for Computer Science</li>
-											<li>CS250: Computer Architecture</li>
-											<li>CS201: Data Structures and Algorithms</li>
-										</ul>
-									</div>
-									<div class="col-6 col-12-medium" align="left">
-										<h3>Math + Engineering</h3>
-										<ul>
-											<li>VMS 125: Foundations of Game Design</li>
-											<li>EGR 393: Trackerless Neuronavigation</li>
-											<li>STA 210: Regression Analysis</li>
-											<li>MATH 230: Probability</li>
-											<li>STA 102L: Intro to Biostatistics</li>
-											<li>EGR 101L: Engineering Design and Communication</li>
-											<li>MATH 218-2: Matrices and Vectors</li>
-										</ul>
-									</div>
-								</div>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="https://cs.duke.edu/undergraduate/degrees/BS" class="button">CS Requirements</a></li>
-									</ul>
-								</footer>
-							</section>
-						
 						<!-- About Me -->
 						<section id="about" class="main">
 							<div class="spotlight">
@@ -212,7 +174,7 @@
 									<header class="major">
 										<h2>About Me</h2>
 									</header>
-									<p>Hey there! My name is Luke Nam, an undergraduate senior at Duke University majoring in computer science (BS). My main research interests are large language models (LLMs) and computer vision (CV). You can find my research lab contributions throughout this website! Outside of academics, I enjoy watching chess and playing clarinet in the Duke University Marching Band.</p>
+									<p>Hey there! My name is Luke Nam, an incoming computer science Ph.D. student at Vanderbilt University. My main research interest lies in formal verification of neural networks, and verifying autonomous cyber-physical systems (CPSs). You can find my research lab contributions throughout this website! Outside of academics, I enjoy watching college basketball and was a former clarinet in the Duke University Marching Band.</p>
 									<ul class="actions">
 										<li><a href="https://github.com/lukelike1001" class="button">Github</a></li>
 										<li><a href="https://www.linkedin.com/in/lsn12/" class="button primary">LinkedIn</a></li>
@@ -221,30 +183,15 @@
 								<span class="image"><img src="images/cameron.jpg" alt="" /></span>
 							</div>
 						</section>
-
-						<!-- Extras -->
-							<section id="extras" class="main special">
-								<header class="major">
-									<h2>Fun Stuff</h2>
-									<p>Web surfing is fun! Here's some cool pages:</p>
-								</header>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="https://en.wikipedia.org/wiki/Special:Random" class="button primary">Random Wikipedia Page</a></li>
-										<li><a href="https://www.nytimes.com/" class="button">NYTimes</a></li>
-									</ul>
-								</footer>
-							</section>
-
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
 							<h2>Luke Nam</h2>
-							<p>Undergraduate Senior at Duke University. Graduating in Spring 2025.
-								Majoring in Computer Science (BS). Main interests are
-								large language models (LLMs), computer vision (CV), and puppies.
+							<p>Incoming Spring 2026 Computer Science Ph.D. Student at Vanderbilt University. Graduated from Duke with a B.S. in Computer Science in Spring 2025.
+								Incoming CS Ph.D. Student at Vanderbilt. Main interests are
+								formal verification, reliable cyber-physical systems, and puppies.
 							</p>
 							<ul class="actions">
 								<li><a href="https://lukelike1001.github.io/" class="button">Homepage</a></li>
